@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Jio Cinema Captions Enhancer",
+    "description": "Configure captions in Jio Cinema",
+    "permissions": ["activeTab", "storage"],
+    "version": "1.0",
+    "action": {
+        "default_popup": "hello.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://www.jiocinema.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+      
+}
